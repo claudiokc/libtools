@@ -51,8 +51,8 @@ def logprep(mode):
         if not mode.startswith('FILE'):
             return False
 
-    2    log_path = local_config['LOGGING2']['LOG_PATH']
-2        path, log_dirname = os.path.split(log_path)
+        log_path = local_config['LOGGING2']['LOG_PATH']
+        path, log_dirname = os.path.split(log_path)
 
         if not os.path.exists(path):
             os.makedirs(path)
