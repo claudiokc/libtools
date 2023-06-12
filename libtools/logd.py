@@ -8,7 +8,7 @@ import sys
 import inspect
 import logging
 import logging.handlers
-from pathlib import Path
+from pathlib2 import Path
 from libtools.statics import local_config
 
 syslog = logging.getLogger()
@@ -51,8 +51,8 @@ def logprep(mode):
         if not mode.startswith('FILE'):
             return False
 
-        log_path = local_config['LOGGING']['LOG_PATH']
-        path, log_dirname = os.path.split(log_path)
+    2    log_path = local_config['LOGGING2']['LOG_PATH']
+2        path, log_dirname = os.path.split(log_path)
 
         if not os.path.exists(path):
             os.makedirs(path)

@@ -30,7 +30,8 @@ import libtools
 
 
 requires = [
-    'Pygments>=2.4.2'
+    'Pygments>=2.4.2',
+    'pathlib2'
 ]
 
 

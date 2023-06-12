@@ -9,7 +9,7 @@ import inspect
 import logging
 import platform
 import subprocess
-from pathlib import Path
+from pathlib2 import Path
 from libtools._version import __version__
 from libtools.variables import *
 
