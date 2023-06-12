@@ -2,6 +2,7 @@ DESCRIPTION.rst
 LICENSE
 MANIFEST.in
 README.md
+setup.cfg
 setup.py
 libtools/__init__.py
 libtools/_version.py
