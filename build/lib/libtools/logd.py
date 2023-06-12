@@ -8,7 +8,7 @@ import sys
 import inspect
 import logging
 import logging.handlers
-from pathlib2 import Path
+from pathlib import Path
 from libtools.statics import local_config
 
 syslog = logging.getLogger()

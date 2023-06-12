@@ -31,7 +31,7 @@ import libtools
 
 requires = [
     'Pygments>=2.4.2',
-    'pathlib2'
+    'pathlib'
 ]
 
 
@@ -122,6 +122,7 @@ setup(
     classifiers=[
         'Topic :: Software Development :: Build Tools',
         'Development Status :: 4 - Beta',
+        'Programming Language :: Python :: 2.7',
         'Programming Language :: Python :: 3.6',
         'Programming Language :: Python :: 3.7',
         'License :: OSI Approved :: GNU General Public License v3 (GPLv3)',
