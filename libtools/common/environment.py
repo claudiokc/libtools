@@ -9,7 +9,6 @@ import inspect
 import logging
 import platform
 import subprocess
-from pathlib import Path
 from libtools._version import __version__
 from libtools.variables import *
 
@@ -35,7 +34,7 @@ def get_os(detailed=False):
         if os_type == 'Linux':
             os_detail = platform.platform()
             distribution = platform.linux_distribution()[0]
-            HOME = str(Path.home())
+            HOME = str(subprocess.check_output('echo $HOME', shell=True))
             username = os.getenv('USER')
         elif os_type == 'Windows':
             os_detail = platform.platform()
