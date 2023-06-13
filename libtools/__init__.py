@@ -14,16 +14,6 @@ __email__ = "blakeca00@gmail.com"
 __status__ = "Development"
 
 
-try:
-
-    # Linux
-    from libtools.oscodes_unix import exit_codes
-
-except Exception:
-    # windows
-    from libtools.oscodes_win import exit_codes
-
-
 # shared, global logger object
 logger = logd.getLogger(__version__)
 

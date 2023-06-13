@@ -19,7 +19,7 @@ Severity
 
 """
 import inspect
-from libtools import Colors
+from libtools.colors import Colors
 from libtools import logger
 
 # prefix handling
