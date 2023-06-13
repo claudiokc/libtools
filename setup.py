@@ -30,8 +30,7 @@ import libtools
 
 
 requires = [
-    'Pygments>=2.4.2',
-    'pathlib'
+    'Pygments>=2.4.2'
 ]
 
 
@@ -112,7 +111,7 @@ def user_home():
 
 setup(
     name=_project,
-    version=libtools.__version__,
+    version='0.2.6',
     description='Generic Tools & Utilities for processing i/o',
     long_description=read('DESCRIPTION.rst'),
     url='https://github.com/fstab50/libtools',
